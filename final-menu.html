@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="final-menucss.css">
+    <title>MENU</title>
+</head>
+<body bgcolor="black">
+    <img src="bbgg.png" width="100%" height=100% style="position: fixed; filter: opacity(98%);">
+    <img class="nav-icon" src="LOGO.png">
+    <div class="nav">
+        <input type="checkbox" id="check" style="display: none;">
+        <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+        <ul>
+            <li><a href="home1.html">Home</a></li>
+            <li><a href="final-menu.html">Menu</a></li>
+            <li><a href="about us.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+    <div class="menu">
+        <div>LOMI</div>
+        <div>VJ Salo-Salo</div>.
+        <div>Sulit Meals</div>
+        <div>Extras</div>
+      <!--  <div>Beverages</div> -->
+    </div>
+    <div class="list-view" id="list-view">
+        <div class="centerdiv" id="list1">LOMI</div>
+        <div class="centerdiv" id="list2">SULIT</div>
+        <div class="centerdiv" id="list3">SALO SALO</div>
+        <div class="centerdiv" id="list4">EXTRAS</div>
+      <!-- <div class="centerdiv">Beverages</div> -->
+    </div>
+    <!--TO DO INSERT ORDER ICON OR SEARCH BAR-->
+    <img class="cart" src="cart-svgrepo-com.svg"
+        style="position: absolute; margin-top: -10px; width: 50px;">
+        <div id="notif-cart" class="centerdiv">1</div>
+    <div>
+        <div id="checkL" class="checklist"><i class="fas fa-bars"></i></div>
+        <div class="current-title centerdiv"></div>
+    </div>
+    <div class="menu-items">
+        <div class="menu-items-grid">
+            <div class="lomi">
+                <div class="menu-name">Regular Order</div>
+                <img src="llllomi.png" alt="LOMI">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Regular Order", 49);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱49.00</div>
+            </div>
+            <div class="lomi">
+                <div class="menu-name">Special Order 1</div>
+                <img src="llomi.png" alt="LOMI">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Order 1", 124);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱124.00</div>
+            </div>
+            <div class="lomi">
+                <div class="menu-name">Special Order 2</div>
+                <img src="lllomi.png" alt="LOMI">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Order 2", 159);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱159.00</div>
+            </div>
+            <!--SULIT ORDER-->
+            <div class="sulit">
+                <div class="menu-name">Regular Sulit</div>
+                <img src="sulit1.png" alt="LOMI">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Regular Sulit ", 49);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱49.00</div>
+            </div>
+            <div class="sulit">
+                <div class="menu-name">Special Sulit 1</div>
+                <img src="sulit2.png" alt="LOMI">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Sulit  1", 79);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱79.00</div>
+            </div>
+            <div class="sulit">
+                <div class="menu-name">Special Sulit 2</div>
+                <img src="sulit3.png" alt="LOMI">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Sulit  2", 79);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱79.00</div>
+            </div>
+            <div class="sulit">
+                <div class="menu-name">Special Sulit 3</div>
+                <img src="sulit4.png" alt="LOMI">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Sulit  3", 69);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱69.00</div>
+            </div>
+            <!--SALO SALO ORDER-->
+            <div class="salo">
+                <div class="menu-name">Salo MUcho</div>
+                <img src="salo-1.png" alt="SALO">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Regular Salo", 649);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱649.00</div>
+            </div>
+            <div class="salo">
+                <div class="menu-name">Family Mucho</div>
+                <img src="salo-2.png" alt="SALO">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Salo 1", 849);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱849.00</div>
+            </div>
+            <div class="salo">
+                <div class="menu-name">Party Mucho</div>
+                <img src="salo-3.png" alt="SALO">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Salo 2", 2,899);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱2,899.00</div>
+            </div>
+            <!--EXTRAS ORDER-->
+            <div class="extra">
+                <div class="menu-name">Extra 1</div>
+                <img src="ext1.png" alt="EXTRA">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Regular Extra", 29);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱29.00</div>
+            </div>
+            <div class="extra">
+                <div class="menu-name">Extra 2</div>
+                <img src="ext2.png" alt="EXTRA">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Extra 1", 12);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱12.00</div>
+            </div>
+            <div class="extra">
+                <div class="menu-name">Extra 3</div>
+                <img src="ext3.png" alt="EXTRA">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Extra 2", 15);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱15.00</div>
+            </div>
+            <div class="extra">
+                <div class="menu-name">Extra 4</div>
+                <img src="ext4.png" alt="EXTRA">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Extra 2", 15);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱15.00</div>
+            </div>
+            <div class="extra">
+                <div class="menu-name">Extra 5</div>
+                <img src="ext5.png" alt="EXTRA">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Extra 2", 19);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱19.00</div>
+            </div>
+            <div class="extra">
+                <div class="menu-name">Extra 6</div>
+                <img src="ext6.png" alt="EXTRA">
+                <div class="desc-con centerdiv"><span class="description-menu">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor</span></div>
+                <button onclick='orderProduct("Special Extra 2", 19);' class="menu-add-to-cart">ADD TO CART</button>
+                <div class="menu-price">₱24.00</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart-inside">
+        <div class="all-cart-product"></div>
+        <button id="order-now">ORDER NOW</button>
+    </div>
+    <footer class="copyright">&copy; Copyright 2023 VJ Batangas Lomi</footer>
+    <script type="text/javascript">
+
+        let numberNotif   = 0;
+        let allOrderArray = [];
+
+        let toggled     = false, isCartOpened = false;
+        const butList   = document.getElementById("checkL");
+        const listView  = document.getElementById("list-view");
+        const cartNotif = document.getElementById("notif-cart");
+
+        const allLomi  = document.querySelectorAll(".lomi");
+        const allSulit = document.querySelectorAll(".sulit");
+        const allSalo  = document.querySelectorAll(".salo");
+        const allExtra = document.querySelectorAll(".extra");
+
+        const cartToggle        = document.querySelector(".cart");
+        const cartInside        = document.querySelector(".cart-inside");
+        const cartInsideProduct = document.querySelector(".all-cart-product");
+        const orderNowBtn       = document.getElementById("order-now");
+        orderNowBtn.addEventListener('click', orderNowFunction);
+
+        cartToggle.addEventListener("click", clickCartToggle);
+
+        function clickCartToggle() {
+            numberNotif = 0;
+            cartInside.style.display = (!isCartOpened) ? "inline-block" : "none"; 
+            isCartOpened = !isCartOpened;
+
+            if (cartInside.style.display == "inline-block")
+                cartNotif.style.display = "none";
+        }
+        clickCartToggle();
+
+        function unSeenAll() {
+            allLomi .forEach(e => { e.style.display = "none"; });
+            allSulit.forEach(e => { e.style.display = "none"; });
+            allSalo .forEach(e => { e.style.display = "none"; });
+            allExtra.forEach(e => { e.style.display = "none"; });    
+        }
+        unSeenAll();
+        document.getElementById("list1").addEventListener('click', () => { document.querySelector(".current-title").textContent = "LOMI";
+            unSeenAll(); allLomi .forEach(e => { e.style.display = "inline-block"; }); })
+        document.getElementById("list2").addEventListener('click', () => { document.querySelector(".current-title").textContent = "SULIT";
+            unSeenAll(); allSulit.forEach(e => { e.style.display = "inline-block"; }); })
+        document.getElementById("list3").addEventListener('click', () => { document.querySelector(".current-title").textContent = "SALO SALO";
+            unSeenAll(); allSalo .forEach(e => { e.style.display = "inline-block"; }); })
+        document.getElementById("list4").addEventListener('click', () => { document.querySelector(".current-title").textContent = "EXTRAS";
+            unSeenAll(); allExtra.forEach(e => { e.style.display = "inline-block"; }); })
+
+
+        butList.addEventListener('click', () => {
+            if (toggled) {
+                listView.style.transform = 'translateY(50px) scaleY(100%)';
+                toggled = false;
+            } else {
+                listView.style.transform = 'translateY(-200px) scaleY(0%)';
+                toggled = true;
+            }
+        });
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 800) {
+                toggled = true;
+                listView.style.transform = 'translateY(50px) scaleY(100%)';
+            } else {
+                listView.style.transform = 'translateY(-200px) scaleY(0%)';
+            }
+        });
+        function orderProduct(stringOrder, price) {
+            let findElement = false;
+            for (let i = 0; i < allOrderArray.length; i++) {
+                if (allOrderArray[i][0] == stringOrder) {
+                    allOrderArray[i][1]++;
+                    findElement = true;
+                    break;
+                }
+            }
+            if (!findElement) allOrderArray.push( [ stringOrder, 1, price ] );
+
+            if (cartInside.style.display == "none") {
+                cartNotif.style.display = "inline-block";
+                cartNotif.textContent = `${++numberNotif}`;
+            }
+            createOrderElements();
+        }
+        function addMinButtonFunction(stringOrder, addIt) {
+            for (let i = 0; i < allOrderArray.length; i++) {
+                if (allOrderArray[i][0] == stringOrder) {
+                    allOrderArray[i][1] += addIt;
+                    if (allOrderArray[i][1] <= 0)
+                        allOrderArray[i][1] = 0;
+                    break;
+                }
+            }
+            createOrderElements();
+        }
+        function createOrderElements() {
+            // REMOVE ALL CHILD
+            while (cartInsideProduct.firstChild) {
+                cartInsideProduct.removeChild(cartInsideProduct.firstChild);
+            }
+            for (let i = 0; i < allOrderArray.length; i++) {
+                let newElement = document.createElement("div");
+                newElement.setAttribute("class", "cart-product centerdiv");
+                newElement.setAttribute("order-index", 0);
+                newElement.textContent = `${allOrderArray[i][1]} | ${allOrderArray[i][0]} -> P${allOrderArray[i][1]*allOrderArray[i][2]}`;
+
+                let addButton = document.createElement("button");
+                addButton.setAttribute("id", "cart-product-add");
+                addButton.setAttribute("index", allOrderArray[i][0]);
+                addButton.textContent = "+";
+                addButton.addEventListener('click', () => { addMinButtonFunction(allOrderArray[i][0], 1); });
+
+                let minButton = document.createElement("button");
+                minButton.setAttribute("id", "cart-product-min");
+                minButton.setAttribute("index", allOrderArray[i][0]);
+                minButton.textContent = "-";
+                minButton.addEventListener('click', () => { addMinButtonFunction(allOrderArray[i][0], -1); });
+
+                cartInsideProduct.appendChild(newElement);
+                newElement.appendChild(addButton);
+                newElement.appendChild(minButton);
+            }
+        }
+        function orderNowFunction() {
+            if (allOrderArray.length == 0) return;
+            let total = 0;
+            for (let i = 0; i < allOrderArray.length; i++)
+                total += allOrderArray[i][1]*allOrderArray[i][2];
+
+            allOrderArray = [];
+            createOrderElements();
+            alert(`SUCCESSFULLY CREATED AN ORDER! TOTAL OF P${total}`);
+        }
+    </script>
+</body>
+</html>
